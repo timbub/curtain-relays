@@ -77,7 +77,7 @@ class MyCallbacks: public BLECharacteristicCallbacks {
           int colonIndex = command.indexOf(':', space1);
           if (colonIndex > space1) {
             int hour = command.substring(space1 + 1, colonIndex).toInt();
-            int minute = command.substring(colonIndex + 1).toInt();
+            int minute = command.substring(colonIndex + 1).toInt();   
             
             if (type == "OPEN") {
               openHour = hour; openMinute = minute; scheduleEnabled = true;
